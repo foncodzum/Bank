@@ -1,0 +1,9 @@
+QWidget {
+background-color:rgb(255, 255,255);
+}
+#loan_btn
+{
+background-color:rgb(255, 0, 4);
+border-radius: 12px;
+color:rgb(255, 255, 255);
+}

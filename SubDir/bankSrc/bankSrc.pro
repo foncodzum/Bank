@@ -12,3 +12,6 @@ QT += widgets
 FORMS += \
     mainwindow.ui \
     menuwidg.ui
+
+DISTFILES += \
+    style.qss
