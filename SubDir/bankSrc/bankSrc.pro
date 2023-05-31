@@ -8,7 +8,11 @@ SOURCES += \
     menuwidg.cpp
 
 QT += widgets
+QT += sql
 
 FORMS += \
     mainwindow.ui \
     menuwidg.ui
+
+RESOURCES += \
+    stylesheet.qrc

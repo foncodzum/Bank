@@ -1,0 +1,39 @@
+QWidget {
+background-color: #f6f0ef;
+}
+#loan_btn
+{
+background-color: #eb1f5c;
+border-radius: 12px;
+color: #fcf7f7;
+}
+#loan_btn:hover
+{
+background-color: #9c6f75;
+border-radius: 12px;
+color: #fcf7f7;
+}
+#loan_btn:pressed
+{
+background-color: #c48fa3;
+border-radius: 12px;
+color: #fcf7f7;
+}
+QPushButton:hover
+{
+background-color: #9c6f75;
+border-radius: 12px;
+color: #fcf7f7;
+}
+QPushButton:pressed
+{
+background-color: #c48fa3;
+border-radius: 12px;
+color: #fcf7f7;
+}
+QPushButton
+{
+background-color: #f1cfd9;
+border-radius: 12px;
+color: #56464b;
+}
