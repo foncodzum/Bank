@@ -6,21 +6,25 @@
 #include <QString>
 #include "mainwindow.h"
 #include "menuwidg.h"
+#include <QFile>
+#include <QDebug>
 
 int main(int c, char **v)
 {
     QApplication app(c,v);
-
+    QFile qssFile(":/style.qss");
+    qssFile.open(QFile::ReadOnly);
+    if(qssFile.isOpen())
+    {
+        QString qss = QLatin1String(qssFile.readAll());
+        qApp->setStyleSheet(qss);
+        qssFile.close();
+    }
+    else
+    {
+        qDebug()<<"Не может открыть файл";
+    }
     MenuWidg widget;
     widget.show();
-
-    //MenuWidg log_btn;
-
-    //QObject::connect(&log_btn, SIGNAL(clicked()), &app, SLOT(quit()));
-
-    app.connect(&logIn_btnWithId::QWidget, SIGNAL(clicked(int)), &app, SLOT(setId(int)));
-
-    //MenuWidg::connect(&MenuWidg::logIn_btn, SIGNAL(QButtonGroup::idClicked(int id)),&app, SLOT(quit()));
-
     app.exec();
 }

@@ -12,3 +12,6 @@ QT += widgets
 FORMS += \
     mainwindow.ui \
     menuwidg.ui
+
+RESOURCES += \
+    stylesheet.qrc
