@@ -19,39 +19,21 @@ background-color: #c48fa3;
 border-radius: 12px;
 color: #fcf7f7;
 }
-#logIn_btn
-{
-background-color: #f1cfd9;
-border-radius: 12px;
-color: #56464b;
-}
-#logIn_btn:hover
+QPushButton:hover
 {
 background-color: #9c6f75;
 border-radius: 12px;
 color: #fcf7f7;
 }
-#logIn_btn:pressed
+QPushButton:pressed
 {
 background-color: #c48fa3;
 border-radius: 12px;
 color: #fcf7f7;
 }
-#savings_btn
+QPushButton
 {
 background-color: #f1cfd9;
 border-radius: 12px;
 color: #56464b;
-}
-#savings_btn:hover
-{
-background-color: #9c6f75;
-border-radius: 12px;
-color: #fcf7f7;
-}
-#savings_btn:pressed
-{
-background-color: #c48fa3;
-border-radius: 12px;
-color: #fcf7f7;
 }

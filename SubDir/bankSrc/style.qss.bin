@@ -1,9 +1,0 @@
-QWidget {
-background-color: #e8fcf6
-}
-#loan_btn
-{
-background-color: #ed7e7b
-border-radius: 12px;
-color: #fcf7f7
-}
