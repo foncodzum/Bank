@@ -24,7 +24,9 @@ int main(int c, char **v)
     {
         qDebug()<<"Не может открыть файл";
     }
-    MenuWidg widget;
-    widget.show();
+
+    MainWindow win;
+    win.show();
+
     app.exec();
 }

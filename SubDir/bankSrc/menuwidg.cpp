@@ -14,21 +14,17 @@ MenuWidg::~MenuWidg()
     delete ui;
 }
 
-logIn_btnWithId :: logIn_btnWithId(int id)
-{
-    Id=id;
-}
-
-void logIn_btnWithId :: setId(int id)
-{
-    Id=id;
-}
-
-void logIn_btnWithId :: mouseReleaseEvent(QMouseEvent *event())
-{
-    emit clicked(Id);
-}
-
 void MenuWidg::on_logIn_btn_clicked()
 {
+    id = 1;
+}
+
+void MenuWidg::on_loan_btn_clicked()
+{
+    id = 2;
+}
+
+void MenuWidg::on_savings_btn_clicked()
+{
+    id = 3;
 }
