@@ -8,6 +8,7 @@
 #include "menuwidg.h"
 #include <QFile>
 #include <QDebug>
+#include <QWidget>
 
 int main(int c, char **v)
 {
@@ -24,7 +25,13 @@ int main(int c, char **v)
     {
         qDebug()<<"Не может открыть файл";
     }
-    MenuWidg widget;
-    widget.show();
+
+    MainWindow mainWin;
+
+    MenuWidg *widget = new MenuWidg;
+
+    mainWin.setCentralWidget(widget);
+    mainWin.show();
+
     app.exec();
 }

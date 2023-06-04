@@ -1,18 +1,21 @@
 HEADERS += \
     mainwindow.h \
-    menuwidg.h
+    menuwidg.h \
+    loginwidg.h
 
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    menuwidg.cpp
+    menuwidg.cpp \
+    loginwidg.cpp
 
 QT += widgets
 QT += sql
 
 FORMS += \
     mainwindow.ui \
-    menuwidg.ui
+    menuwidg.ui \
+    loginwidg.ui
 
 RESOURCES += \
     stylesheet.qrc
