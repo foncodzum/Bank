@@ -1,2 +1,3 @@
 TEMPLATE = subdirs
-SUBDIRS +=
+SUBDIRS += \
+    menuWidg_test
