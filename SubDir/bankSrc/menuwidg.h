@@ -3,11 +3,11 @@
 
 #include <QWidget>
 #include <QPushButton>
-
+#include "signup.h"
 namespace Ui {
 class MenuWidg;
 }
-
+class Signup;
 class MenuWidg : public QWidget
 {
     Q_OBJECT
@@ -21,9 +21,11 @@ private slots:
 
 private:
     Ui::MenuWidg *ui;
+    Signup *signup;
+friend class Signup;
 };
 
-class logIn_btnWithId : public QPushButton
+/*class logIn_btnWithId : public QPushButton
 {
     Q_OBJECT
 public:
@@ -36,6 +38,6 @@ protected:
 
 signals:
     void clicked(int);
-};
+};*/
 
 #endif // MENUWIDG_H

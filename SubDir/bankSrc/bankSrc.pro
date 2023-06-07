@@ -9,7 +9,8 @@ SOURCES += \
 
 QT += widgets
 QT += sql
-
+INCLUDEPATH += $$PWD/../BD
+DEPENDPATH += $$PWD/../BD
 FORMS += \
     mainwindow.ui \
     menuwidg.ui
