@@ -34,5 +34,4 @@ FORMS += \
         bd.ui
 
 DISTFILES += \
-    ../../../../table.sql \
     table.sql
