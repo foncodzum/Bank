@@ -27,15 +27,21 @@ void MenuWidg_testTest::btnPressedTest()
 
     QSignalSpy spyLogIn(&menuWidg, SIGNAL(btnPressed(int)));
     QTest::mouseClick(menuWidg.ui->logIn_btn, Qt::LeftButton);
-    QCOMPARE(menuWidg.logInId, 1);
+    QCOMPARE(spyLogIn.count(), 1);
+    QList<QVariant> logInArguments = spyLogIn.takeFirst();
+    QCOMPARE(logInArguments.at(0).toInt(), 1);
 
     QSignalSpy spyLoan(&menuWidg, SIGNAL(btnPressed(int)));
     QTest::mouseClick(menuWidg.ui->loan_btn, Qt::LeftButton);
-    QCOMPARE(menuWidg.loanId, 2);
+    QCOMPARE(spyLoan.count(), 1);
+    QList<QVariant> loanArguments = spyLoan.takeFirst();
+    QCOMPARE(logInArguments.at(0).toInt(), 2);
 
     QSignalSpy spySavings(&menuWidg, SIGNAL(btnPressed(int)));
     QTest::mouseClick(menuWidg.ui->savings_btn, Qt::LeftButton);
-    QCOMPARE(menuWidg.savingsId, 3);
+    QCOMPARE(spySavings.count(), 1);
+    QList<QVariant> savingsArguments = spySavings.takeFirst();
+    QCOMPARE(savingsArguments.at(0).toInt(), 3);
 }
 
 QTEST_MAIN(MenuWidg_testTest)
