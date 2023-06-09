@@ -21,10 +21,6 @@ class MenuWidg : public QWidget
 
     friend class MenuWidg_testTest;
 
-    int logInId = 1;
-    int loanId = 2;
-    int savingsId = 3;
-
 public:
     explicit MenuWidg(QWidget *parent = 0);
     ~MenuWidg();

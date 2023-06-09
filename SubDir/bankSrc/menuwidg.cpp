@@ -23,7 +23,6 @@ void MenuWidg::on_logIn_btn_clicked()
     if(sender() == ui->logIn_btn)
     {
         emit btnPressed(MenuAct_logIn);
-        logInId = 1;
     }
 }
 
@@ -32,7 +31,6 @@ void MenuWidg::on_loan_btn_clicked()
     if(sender() == ui->loan_btn)
     {
         emit btnPressed(MenuAct_loan);
-        loanId = 2;
     }
 }
 
@@ -41,6 +39,5 @@ void MenuWidg::on_savings_btn_clicked()
     if(sender() == ui->savings_btn)
     {
         emit btnPressed(MenuAct_savings);
-        savingsId = 3;
     }
 }
