@@ -8,6 +8,7 @@
 #include "menuwidg.h"
 #include <QFile>
 #include <QDebug>
+#include "signup.h"
 
 int main(int c, char **v)
 {
