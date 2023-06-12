@@ -11,7 +11,9 @@ MenuWidg::MenuWidg(QWidget *parent) :
     QObject::connect(ui->logIn_btn, SIGNAL(btnPressed(int)), this, SLOT(on_logIn_btn_clicked()));
     QObject::connect(ui->loan_btn, SIGNAL(btnPressed(int)), this, SLOT(on_loan_btn_clicked()));
     QObject::connect(ui->savings_btn, SIGNAL(btnPressed(int)), this, SLOT(on_savings_btn_clicked()));
+   // QWidget::Signup::connect(ui->on_pushButton_clicked,SIGNAL(clicked()),this,SLOT(accept()));
 }
+
 
 MenuWidg::~MenuWidg()
 {
